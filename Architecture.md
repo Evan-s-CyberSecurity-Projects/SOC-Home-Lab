@@ -4,7 +4,8 @@ Explain the "Why": Why did you choose Wazuh? Why did you use Sysmon? Why the spe
 
 
 ```mermaid
+```mermaid
 graph LR
-    A[Kali Linux (Attacker)] -- "Simulated T1110" --> B[Windows 11 (Target)]
-    B -- "Sysmon/Wazuh Agent Telemetry" --> C[Wazuh Manager (SIEM)]
-    C -- "HTTPS (Dashboard)" --> D[Analyst Browser]
+    A[Kali Linux] -- "Simulated T1110" --> B[Windows 11]
+    B -- "Telemetry" --> C[Wazuh Manager]
+    C -- "Dashboard" --> D[Analyst Browser]
