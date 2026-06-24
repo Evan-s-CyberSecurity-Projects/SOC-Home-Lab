@@ -3,6 +3,7 @@ Out-of-the-box SIEM implementations lack granularity for unique enterprise direc
 Configuration: Modified the native ossec.conf file via elevated administrative privileges to implement a real-time tracking mechanism on non-standard staging paths.
 Scope Expansion: Monitored system configuration elements alongside user-accessible directories (C:\test) to audit active user operations.
 Validation: Verified the distinction between asset "Inventory snapshots" and live cryptographic "Event journals" by modifying local test assets and tracking rule state variations.
+
 2. Telemetry Optimization (Microsoft Sysmon Integration)
 Standard Windows Security Event Logs are historically blind to process line heritage. To capture volatile endpoint execution patterns:
 Deployed Microsoft Sysmon (System Monitor) using the community-vetted SwiftOnSecurity configuration baseline.
