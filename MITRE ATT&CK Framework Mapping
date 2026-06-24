@@ -1,4 +1,0 @@
-Attack Vector,MITRE ATT&CK ID,Telemetry Source,Observed SIEM Behavior
-Command & Scripting Interpreter,T1059.003 (Windows Command Shell),Microsoft Sysmon,Process Creation event tracking cmd.exe launching subprocess chains.
-Brute Force / Remote Services,T1110 / T1021,Windows Security Log / Sysmon,High-frequency cluster of rapid network resource connection mappings.
-File & Directory Discovery,T1083,Wazuh syscheck (FIM),Real-time monitoring validation of modified/created test folder indicators.
