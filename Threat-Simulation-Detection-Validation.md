@@ -8,3 +8,7 @@ Blue Team Detection & Triage Narrative
 The Telemetry Catch: Rather than relying solely on basic Windows Logon Failure logs (Event ID 4625), the advanced Sysmon pipeline successfully intercepted the process lineage.
 The High-Fidelity Alert: The Wazuh SIEM captured 20 concurrent counts of an elevated cmd.exe terminal spawning child processes of net.exe.
 Analysis: This structural correlation proves that the lab successfully detects the execution of native system discovery and mapping tools ("Living off the Land" techniques) rather than generic baseline operational noise.
+
+## Conclusion
+* **Status:** Resolved / Detection Validated.
+* **Tuning Recommendation:** The current rule successfully caught the simulation. Future iterations will focus on reducing noise for administrative service accounts using similar `net.exe` commands.
